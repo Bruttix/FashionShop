@@ -129,7 +129,7 @@ const Header = () => {
                       placeholder="Search"
                       onChange={(e) => setKeyword(e.target.value)}
                     />
-                    <button type="submit" className="search-button">
+                    <button type="submit" className="neon-button3">
                       search
                     </button>
                   </form>
@@ -142,7 +142,7 @@ const Header = () => {
           <div className="pc-header">
             <div className="row">
               <div className="col-md-3 col-4 d-flex align-items-center">
-                <Link className="navbar-brand" to="/">
+                <Link className="neon-button2" to="/">
                   <img alt="logo" src="/images/logo.png" />
                 </Link>
               </div>
@@ -150,11 +150,11 @@ const Header = () => {
                 <form onSubmit={submitHandler} className="input-group">
                   <input
                     type="search"
-                    className="form-control rounded search"
+                    className="neon-button3"
                     placeholder="Search"
                     onChange={(e) => setKeyword(e.target.value)}
                   />
-                  <button type="submit" className="search-button">
+                  <button type="submit" className="neon-button3">
                     search
                   </button>
                 </form>
@@ -164,7 +164,7 @@ const Header = () => {
                   <div className="btn-group">
                     <button
                       type="button"
-                      className="name-button dropdown-toggle"
+                      className="neon-button3"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
@@ -187,8 +187,8 @@ const Header = () => {
                   </div>
                 ) : (
                   <>
-                    <Link to="/register">Register</Link>
-                    <Link to="/login">Login</Link>
+                    <Link class="neon-button2"to="/register">Register</Link>
+                    <Link class="neon-button2"to="/login">Login</Link>
                   </>
                 )}
 

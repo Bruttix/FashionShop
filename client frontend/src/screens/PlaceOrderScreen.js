@@ -174,7 +174,7 @@ const PlaceOrderScreen = ({ history }) => {
               </tbody>
             </table>
             {cart.cartItems.length === 0 ? null : (
-              <button type="submit" onClick={placeOrderHandler}>
+              <button class="neon-button" type="submit" onClick={placeOrderHandler}>
                 PLACE ORDER
               </button>
             )}

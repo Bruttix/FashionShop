@@ -71,7 +71,7 @@ const CartScreen = ({ match, location, history }) => {
                     <h4>{item.name}</h4>
                   </Link>
                 </div>
-                <div className="cart-qty col-md-2 col-sm-5 mt-md-5 mt-3 mt-md-0 d-flex flex-column justify-content-center">
+                <div className="cart-qty col-md-2 col-sm-5 d-flex flex-column justify-content-center">
                   <h6>QUANTITY</h6>
                   <select
                     value={item.qty}
@@ -101,7 +101,7 @@ const CartScreen = ({ match, location, history }) => {
             <hr />
             <div className="cart-buttons d-flex align-items-center row">
               <Link to="/" className="col-md-6 ">
-                <button>Continue To Shopping</button>
+                <button>Continue Shopping</button>
               </Link>
               {total > 0 && (
                 <div className="col-md-6 d-flex justify-content-md-end mt-3 mt-md-0">

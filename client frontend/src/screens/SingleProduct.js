@@ -116,7 +116,7 @@ const SingleProduct = ({ history, match }) => {
                         </div>
                         <button
                           onClick={AddToCartHandle}
-                          className="round-black-btn"
+                          className="neon-button"
                         >
                           Add To Cart
                         </button>

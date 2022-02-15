@@ -50,9 +50,9 @@ const Login = ({ location, history }) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="submit">Login</button>
+          <button class="neon-button2"type="submit">Login</button>
           <p>
-            <Link
+            <Link class="neon-button"
               to={redirect ? `/register?redirect=${redirect}` : "/register"}
             >
               Create Account
