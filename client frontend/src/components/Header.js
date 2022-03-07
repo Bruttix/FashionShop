@@ -27,34 +27,7 @@ const Header = () => {
   };
   return (
     <div>
-      {/* Top Header */}
-      <div className="Announcement ">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 d-flex align-items-center display-none">
-              <p>+1 864 275 6969</p>
-              <p>UTSASoftwareGroup4@gmail.com</p>
-            </div>
-            <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
-              <Link to="">
-                <i className="fab fa-facebook-f"></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-instagram"></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-linkedin-in"></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-youtube"></i>
-              </Link>
-              <Link to="">
-                <i class="fab fa-pinterest-p"></i>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+
       {/* Header */}
       <div className="header">
         <div className="container">
@@ -70,13 +43,7 @@ const Header = () => {
                 <div className="col-6 d-flex align-items-center justify-content-end Login-Register">
                   {userInfo ? (
                     <div className="btn-group">
-                      <button
-                        type="button"
-                        className="name-button dropdown-toggle"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
+                      <button type="button" className="name-button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i className="fas fa-user"></i>
                       </button>
                       <div className="dropdown-menu">
@@ -84,24 +51,14 @@ const Header = () => {
                           Profile
                         </Link>
 
-                        <Link
-                          className="dropdown-item"
-                          to="#"
-                          onClick={logoutHandler}
-                        >
+                        <Link className="dropdown-item" to="#" onClick={logoutHandler} >
                           Logout
                         </Link>
                       </div>
                     </div>
                   ) : (
                     <div className="btn-group">
-                      <button
-                        type="button"
-                        className="name-button dropdown-toggle"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
+                      <button type="button" className="name-button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-user"></i>
                       </button>
                       <div className="dropdown-menu">
@@ -123,12 +80,7 @@ const Header = () => {
                 </div>
                 <div className="col-12 d-flex align-items-center">
                   <form onSubmit={submitHandler} className="input-group">
-                    <input
-                      type="search"
-                      className="form-control rounded search"
-                      placeholder="Search"
-                      onChange={(e) => setKeyword(e.target.value)}
-                    />
+                    <input type="search" className="form-control rounded search" placeholder="Search" onChange={(e) => setKeyword(e.target.value)} />
                     <button type="submit" className="neon-button3">
                       search
                     </button>
@@ -141,17 +93,33 @@ const Header = () => {
           {/* PC HEADER */}
           <div className="pc-header">
             <div className="row">
-              <div className="col-md-3 col-4 d-flex align-items-center">
+              <div className="col-md-1 d-flex align-items-center">
                 <Link className="neon-button2" to="/">
                   <img alt="logo" src="/images/logo.png" />
                 </Link>
               </div>
+                
               <div className="col-md-6 col-8 d-flex align-items-center">
+                   <a className="headerSocial" href="">
+                     <i class="headerSocial fab fa-facebook"></i>
+                   </a>
+                   <a className="headerSocial" href="">
+                     <i class="headerSocial fab fa-instagram"></i>
+                   </a>
+                   <a className="headerSocial" href="">
+                     <i class="headerSocial fab fa-twitter"></i>
+                   </a>
+                   <a className="headerSocial" href="">
+                     <i className="headerSocial fab fa-linkedin"></i>
+                   </a>
+                   <a className="headerSocial" href="">
+                     <i class="headerSocial fab fa-github"></i>
+                   </a>
                 <form onSubmit={submitHandler} className="input-group">
                   <input
                     type="search"
                     className="neon-button3"
-                    placeholder="Search"
+                    placeholder="Product Description"
                     onChange={(e) => setKeyword(e.target.value)}
                   />
                   <button type="submit" className="neon-button3">
@@ -159,7 +127,18 @@ const Header = () => {
                   </button>
                 </form>
               </div>
-              <div className="col-md-3 d-flex align-items-center justify-content-end Login-Register">
+              <nav id="navbar" className="col-md-6 col-8 d-flex align-items-center">
+                <div class="nav-wrapper">
+                  <ul id="menu">
+                   <li><a href="#Girls">Girls</a></li>
+                   <li><a href="#Guys">Guys</a></li>
+                   <li><a href="#Accesories">Accesories</a></li>
+                   <li><a href="#About">About</a></li>
+                   <li><a href="#Custom">Custom</a></li>
+                  </ul>
+               </div>
+              </nav>
+              <div className="col-md-5 d-flex align-items-center justify-content-end Login-Register">
                 {userInfo ? (
                   <div className="btn-group">
                     <button
@@ -191,7 +170,7 @@ const Header = () => {
                     <Link class="neon-button2"to="/login">Login</Link>
                   </>
                 )}
-
+                    
                 <Link to="/cart">
                   <i className="fas fa-shopping-bag"></i>
                   <span className="badge">{cartItems.length}</span>
@@ -199,6 +178,20 @@ const Header = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      {/* Sub Header & navbar */}
+      <div className="Announcement ">
+        <div className="container">
+            <div>
+              <ul className="headerNavBar">
+                <li><a href="" data-text="Girls">Girls</a></li>
+                <li><a href="" data-text="Guys">Guys</a></li>
+                <li><a href="" data-text="Accessories">Accessories</a></li>
+                <li><a href="" data-text="About">About</a></li>
+                <li><a href="" data-text="Contact">Contact</a></li>
+              </ul>
+            </div>
         </div>
       </div>
     </div>

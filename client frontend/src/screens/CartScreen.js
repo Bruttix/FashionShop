@@ -48,10 +48,10 @@ const CartScreen = ({ match, location, history }) => {
           </div>
         ) : (
           <>
-            <div className=" alert alert-info text-center mt-3">
+            <div className="totalCartProduct alert alert-info text-center mt-3">
               Total Cart Products
-              <Link className="text-success mx-2" to="/cart">
-                ({cartItems.length})
+              <Link className="mx-2" to="/cart">
+                ( {cartItems.length} )
               </Link>
             </div>
             {/* cartiterm */}

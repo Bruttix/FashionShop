@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\client frontend"
+    "\\client frontend",
+    "\\client frontend\\src",
+    "\\client frontend\\src\\components",
+    "\\client frontend\\src\\screens"
   ],
-  "SelectedNode": "\\Global settings (C:\\Users\\Brand\\AppData\\Local\\Microsoft\\VisualStudio\\17.0_1d2d7e58\\OpenFolder)",
+  "SelectedNode": "\\client frontend\\src\\components\\Header.js",
   "PreviewInSolutionExplorer": false
 }
