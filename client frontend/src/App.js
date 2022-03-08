@@ -14,7 +14,9 @@ import PaymentScreen from "./screens/PaymentScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
 import NotFound from "./screens/NotFound";
+import GirlsScreen from "./screens/GirlsScreen";
 import PrivateRouter from "./PrivateRouter";
+
 
 const App = () => {
   return (

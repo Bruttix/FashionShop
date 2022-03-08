@@ -1,11 +1,12 @@
 
 body {
-
     display: grid;
     place-items: center;
     font-family: "Metal Mania", cursive;
     color: var(--clr-neon);
-    background: #000;
+    background: url('https://res.cloudinary.com/dqbkfteqj/image/upload/v1646728908/Twilight_ygnmtb.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
     
 /*end test
