@@ -1,15 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\client frontend",
-    "\\client frontend\\public",
-    "\\client frontend\\public\\images",
     "\\client frontend\\src",
-    "\\client frontend\\src\\components",
-    "\\client frontend\\src\\screens",
-    "\\server",
-    "\\server\\Routes"
+    "\\client frontend\\src\\components"
   ],
-  "SelectedNode": "\\client frontend\\src\\components\\Header.js",
   "PreviewInSolutionExplorer": false
 }
